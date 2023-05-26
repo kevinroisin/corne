@@ -19,7 +19,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp X>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
@@ -30,7 +31,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp C>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
@@ -41,7 +43,8 @@
                 <&kp LEFT_GUI>,
                 <&macro_tap>,
                 <&kp V>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
         new_tab: new_tab {
             compatible = "zmk,behavior-macro";
@@ -52,7 +55,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp T>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
         close_window: close_window {
             compatible = "zmk,behavior-macro";
@@ -63,7 +67,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp W>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
         quit: quit {
             compatible = "zmk,behavior-macro";
@@ -74,7 +79,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp Q>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
         };
     };
 
