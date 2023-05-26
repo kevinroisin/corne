@@ -14,37 +14,49 @@
             compatible = "zmk,behavior-macro";
             label = "CUT";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp X>;
+            bindings =
+                <&kp LEFT_COMMAND &kp X>,
+                <&macro_press>;
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
             label = "COPY";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp C>;
+            bindings =
+                <&kp LEFT_COMMAND &kp C>,
+                <&macro_press>;
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
             label = "PASTE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp V>;
+            bindings =
+                <&kp LEFT_COMMAND &kp V>,
+                <&macro_press>;
         };
         new_tab: new_tab {
             compatible = "zmk,behavior-macro";
             label = "NEW_TAB";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp T>;
+            bindings =
+                <&kp LEFT_COMMAND &kp T>,
+                <&macro_press>;
         };
         close_window: close_window {
             compatible = "zmk,behavior-macro";
             label = "CLOSE_WINDOW";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp W>;
+            bindings =
+                <&kp LEFT_COMMAND &kp W>,
+                <&macro_press>;
         };
         quit: quit {
             compatible = "zmk,behavior-macro";
             label = "QUIT";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp Q>;
+            bindings =
+                <&kp LEFT_COMMAND &kp Q>,
+                <&macro_press>;
         };
     };
 
