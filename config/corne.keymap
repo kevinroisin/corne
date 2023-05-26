@@ -39,8 +39,7 @@
             label = "NEW_TAB";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
-                <&kp LEFT_GUI &kp T>;
+                <&macro_tap &kp LEFT_GUI &kp T>;
         };
         close_window: close_window {
             compatible = "zmk,behavior-macro";
