@@ -14,37 +14,37 @@
             compatible = "zmk,behavior-macro";
             label = "CUT";
             #binding-cells = <0>;
-            bindings = <&none &kp LEFT_COMMAND &kp X>;
+            bindings = <&kp LEFT_COMMAND &kp X>;
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
             label = "COPY";
             #binding-cells = <0>;
-            bindings = <&none &kp LEFT_COMMAND &kp C>;
+            bindings = <&kp LEFT_COMMAND &kp C>;
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
             label = "PASTE";
             #binding-cells = <0>;
-            bindings = <&none &kp LEFT_COMMAND &kp V>;
+            bindings = <&kp LEFT_COMMAND &kp V>;
         };
         new_tab: new_tab {
             compatible = "zmk,behavior-macro";
             label = "NEW_TAB";
             #binding-cells = <0>;
-            bindings = <&none &kp LEFT_COMMAND &kp T>;
+            bindings = <&kp LEFT_COMMAND &kp T>;
         };
         close_window: close_window {
             compatible = "zmk,behavior-macro";
             label = "CLOSE_WINDOW";
             #binding-cells = <0>;
-            bindings = <&none &kp LEFT_COMMAND &kp W>;
+            bindings = <&kp LEFT_COMMAND &kp W>;
         };
         quit: quit {
             compatible = "zmk,behavior-macro";
             label = "QUIT";
             #binding-cells = <0>;
-            bindings = <&none &kp LEFT_COMMAND &kp Q>;
+            bindings = <&kp LEFT_COMMAND &kp Q>;
         };
     };
 
