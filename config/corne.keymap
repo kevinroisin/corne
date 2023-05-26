@@ -16,7 +16,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LEFT_COMMAND &kp X>;
+                <&kp LEFT_GUI &kp X>;
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
@@ -24,7 +24,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LEFT_COMMAND &kp C>,
+                <&kp LEFT_GUI &kp C>,
                 <&macro_press>;
         };
         paste: paste {
@@ -33,7 +33,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LEFT_COMMAND &kp V>;
+                <&kp LEFT_GUI &kp V>;
         };
         new_tab: new_tab {
             compatible = "zmk,behavior-macro";
@@ -41,7 +41,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LEFT_COMMAND &kp T>;
+                <&kp LEFT_GUI &kp T>;
         };
         close_window: close_window {
             compatible = "zmk,behavior-macro";
@@ -49,7 +49,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LEFT_COMMAND &kp W>;
+                <&kp LEFT_GUI &kp W>;
         };
         quit: quit {
             compatible = "zmk,behavior-macro";
@@ -57,7 +57,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LEFT_COMMAND &kp Q>;
+                <&kp LEFT_GUI &kp Q>;
         };
     };
 
