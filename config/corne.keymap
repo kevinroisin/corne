@@ -44,7 +44,7 @@
             tapping-term-ms = <200>;
             bindings =
                 <&kp T>,
-                <&new_tab>;
+                <&change_tab_forward>;
         };
     };
 
