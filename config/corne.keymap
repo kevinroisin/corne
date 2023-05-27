@@ -10,53 +10,53 @@
 
 / {
     macros {
-        cut: cut {
+        line_before_cursor: line_before_cursor {
             compatible = "zmk,behavior-macro";
-            label = "CUT";
+            label = "LINE_BEFORE_CURSOR";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI>,
+                <&kp LS(LGUI)>,
                 <&macro_tap>,
-                <&kp X>,
+                <&kp LEFT_ARROW>,
                 <&macro_release>,
-                <&kp LGUI>;
+                <&kp LS(LGUI)>;
         };
-        copy: copy {
+        line_after_cursor: line_after_cursor {
             compatible = "zmk,behavior-macro";
-            label = "COPY";
+            label = "LINE_AFTER_CURSOR";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI>,
+                <&kp LS(LGUI)>,
                 <&macro_tap>,
-                <&kp C>,
+                <&kp RIGHT>,
                 <&macro_release>,
-                <&kp LGUI>;
+                <&kp LS(LGUI)>;
         };
-        paste: paste {
+        word_before_cursor: word_before_cursor {
             compatible = "zmk,behavior-macro";
-            label = "PASTE";
+            label = "WORD_BEFORE_CURSOR";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_GUI>,
+                <&kp LS(LEFT_ALT)>,
                 <&macro_tap>,
-                <&kp V>,
+                <&kp LEFT>,
                 <&macro_release>,
-                <&kp LGUI>;
+                <&kp LS(LEFT_ALT)>;
         };
-        new_tab: new_tab {
+        word_after_cursor: word_after_cursor {
             compatible = "zmk,behavior-macro";
-            label = "NEW_TAB";
+            label = "WORD_AFTER_CURSOR";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI>,
+                <&kp LS(LEFT_ALT)>,
                 <&macro_tap>,
-                <&kp T>,
+                <&kp RIGHT>,
                 <&macro_release>,
-                <&kp LGUI>;
+                <&kp LS(LEFT_ALT)>;
         };
         close_window: close_window {
             compatible = "zmk,behavior-macro";
