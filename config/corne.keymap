@@ -142,7 +142,7 @@
 
         prev_tab {
             bindings = <&change_tab_backward>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
         };
     };
 
