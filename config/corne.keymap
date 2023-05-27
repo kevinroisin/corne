@@ -10,90 +10,6 @@
 
 / {
     macros {
-        line_before_cursor: line_before_cursor {
-            compatible = "zmk,behavior-macro";
-            label = "LINE_BEFORE_CURSOR";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LS(LGUI)>,
-                <&macro_tap>,
-                <&kp LEFT_ARROW>,
-                <&macro_release>,
-                <&kp LS(LGUI)>;
-        };
-        line_after_cursor: line_after_cursor {
-            compatible = "zmk,behavior-macro";
-            label = "LINE_AFTER_CURSOR";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LS(LGUI)>,
-                <&macro_tap>,
-                <&kp RIGHT>,
-                <&macro_release>,
-                <&kp LS(LGUI)>;
-        };
-        word_before_cursor: word_before_cursor {
-            compatible = "zmk,behavior-macro";
-            label = "WORD_BEFORE_CURSOR";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LS(LEFT_ALT)>,
-                <&macro_tap>,
-                <&kp LEFT>,
-                <&macro_release>,
-                <&kp LS(LEFT_ALT)>;
-        };
-        word_after_cursor: word_after_cursor {
-            compatible = "zmk,behavior-macro";
-            label = "WORD_AFTER_CURSOR";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LS(LEFT_ALT)>,
-                <&macro_tap>,
-                <&kp RIGHT>,
-                <&macro_release>,
-                <&kp LS(LEFT_ALT)>;
-        };
-        close_window: close_window {
-            compatible = "zmk,behavior-macro";
-            label = "CLOSE_WINDOW";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp W>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-        quit: quit {
-            compatible = "zmk,behavior-macro";
-            label = "QUIT";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp Q>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-        select_all: select_all {
-            compatible = "zmk,behavior-macro";
-            label = "SELECT_ALL";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp A>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
         change_tab_forward: change_tab_forward {
             compatible = "zmk,behavior-macro";
             label = "CHANGE_TAB_FORWARD";
@@ -187,10 +103,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &kp EXCL         &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
-&trans        &quit  &close_window  &new_tab    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &select_all           &cut     &copy    &paste     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                      &trans    &trans     &trans       &trans     &trans           &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
+&trans    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+&trans    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                            &trans    &trans     &trans       &trans     &trans           &trans
             >;
         };
     };
