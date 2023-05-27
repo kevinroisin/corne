@@ -53,12 +53,12 @@
 
         next_tab {
             bindings = <&change_tab_forward>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
         };
 
         prev_tab {
             bindings = <&change_tab_backward>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
     };
 
